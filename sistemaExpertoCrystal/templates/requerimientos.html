@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Requerimientos del Proyecto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-title">Ingrese los requerimientos adicionales:</div>
+            <div class="window-content">
+                <form method="post">
+                    Habilidades de los integrantes: <input type="text" name="habilidades_integrantes"><br>
+                    Tecnologías a usar: <input type="text" name="tecnologias"><br>
+                    Recursos: <input type="text" name="recursos"><br>
+                    Tolerancia al cambio:
+                    <select name="tolerancia_al_cambio">
+                        <option value="Alta">Alta</option>
+                        <option value="Media">Media</option>
+                        <option value="Baja">Baja</option>
+                    </select><br>
+                    <label for="areas">Seleccione el área del proyecto:</label><br>
+                    <select name="areas" multiple>
+                        <option value="Medicina">Medicina</option>
+                        <option value="Arquitectura">Arquitectura</option>
+                        <option value="Psicología">Psicología</option>
+                        <option value="Estudiantil">Estudiantil</option>
+                        <option value="Obrero">Obrero</option>
+                        <option value="Agricultor">Agricultor</option>
+                        <option value="Tecnología">Tecnología</option>
+                    </select><br>
+                    <button type="submit">Finalizar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

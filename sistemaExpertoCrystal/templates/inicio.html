@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Bienvenido al Sistema Experto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-title">Bienvenido al Sistema Experto en Metodología Crystal</div>
+            <div class="window-content">
+                <p>
+                    La metodología Crystal es una familia de metodologías ágiles que se adapta a las características y necesidades del equipo 
+                    de desarrollo y del proyecto. Crystal valora la comunicación, la simplicidad y la mejora continua, y reconoce que cada 
+                    proyecto es único. 
+                </p>
+                <p>
+                    Las diferentes categorías de Crystal (como Clear, Yellow, Orange, entre otras) están diseñadas para proyectos con distintos 
+                    tamaños de equipo y niveles de criticidad. Crystal pone un énfasis especial en la seguridad, la frecuencia de entrega, y 
+                    la personalización, ofreciendo recomendaciones que ayudan a los equipos a alcanzar sus objetivos de forma efectiva y adaptada.
+                </p>
+                <p>
+                    A través de este sistema experto, podrás ingresar los datos de tu equipo y del proyecto para recibir recomendaciones de la 
+                    categoría Crystal más adecuada, junto con buenas prácticas específicas para tu contexto.
+                </p>
+                <a href="{{ url_for('usuario') }}"><button>Comenzar</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

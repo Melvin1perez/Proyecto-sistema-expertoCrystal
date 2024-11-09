@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Datos del Proyecto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-title">Ingrese los datos del proyecto:</div>
+            <div class="window-content">
+                <form method="post">
+                    Nombre del Proyecto: <input type="text" name="nombre_proyecto"><br>
+                    Tamaño del equipo: <input type="number" name="equipo"><br>
+                    Criticidad: 
+                    <select name="criticidad">
+                        <option value="Baja">Baja</option>
+                        <option value="Media">Media</option>
+                        <option value="Alta">Alta</option>
+                        <option value="Muy Alta">Muy Alta</option>
+                    </select><br>
+                    Duración estimada (meses): <input type="number" name="duracion"><br>
+                    <button type="submit">Continuar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

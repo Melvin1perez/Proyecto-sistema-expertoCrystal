@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Datos del Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-title">Ingrese los datos del usuario:</div>
+            <div class="window-content">
+                <form method="post">
+                    Nombres: <input type="text" name="nombres"><br>
+                    Apellidos: <input type="text" name="apellidos"><br>
+                    Habilidades (separadas por comas): <input type="text" name="habilidades_usuario"><br>
+                    <button type="submit">Continuar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Recomendaciones</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Card for the title -->
+        <div class="title-card">
+            <h2>Recomendaciones para el proyecto</h2>
+        </div>
+
+        <!-- Card for the recommendations content -->
+        <div class="recommendations-list">
+            {% for line in recomendacion.split('- ') %}
+                {% if line.strip() %}
+                    <div class="recommendation-card">
+                        <p>- {{ line.strip() }}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <form action="{{ url_for('inicio') }}">
+            <p>¿Desea ingresar un nuevo proyecto?</p>
+            <button type="submit">Sí</button>
+            <a href="/"><button type="button">No</button></a>
+        </form>
+    </div>
+</body>
+</html>

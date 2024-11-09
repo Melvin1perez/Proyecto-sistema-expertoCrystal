@@ -1,0 +1,125 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+/* Card styling for floating effect */
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+/* Title styling */
+h1, h2, h3 {
+    color: #2b6cb0; /* Blue title */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Card titles with background color */
+.card-title {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Form elements */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #f7f9fc;
+}
+
+/* Button styling */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Form labels */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Recommendations card styling */
+.recommendation-card {
+    background-color: #ffffff;
+    border-left: 4px solid #2e3031;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Recommendations list container */
+.recommendations-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title card styling */
+.title-card {
+    background-color: #aaeed2;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Additional section style */
+.window-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 15px;
+}
